@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAHHHH</title>
+</head>
+<style>
+    .btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 40vh;
+    }
+    button{
+        background-color: rgb(50, 255, 146);
+        height: 10vh;
+        width: 20vh;
+        font-size: 4vh;
+        border-radius: 100px;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover{
+        background-color: rgb(255, 78, 78);
+    }
+</style>
+<body>
+    <div class="btn">
+    <button id="fahh">Fahh</button>
+    </div>
+
+<audio id="clickSound">
+  <source src="./fagg.mp3" type="audio/mpeg">
+</audio>
+
+</body>
+<script>
+  const btn = document.getElementById('fahh');
+  const sound = document.getElementById('clickSound');
+
+  btn.addEventListener('click', () => {
+    sound.currentTime = 0; // Reset to start for rapid clicks
+    sound.play();
+  });
+</script>
+</html>
