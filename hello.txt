@@ -1,0 +1,9 @@
+this is incomplete work
+
+git stash
+git stash list
+git stash pop
+
+git checkout -b hotfix
+
+## critical bug is being fixed

@@ -1,48 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+
+    <meta />
     <title>FAHHHH</title>
-</head>
-<style>
-    .btn{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 40vh;
+  </head>
+  <style>
+    .btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 40vh;
     }
-    button{
-        background-color: rgb(50, 255, 146);
-        height: 10vh;
-        width: 20vh;
-        font-size: 4vh;
-        border-radius: 100px;
-        border: none;
-        cursor: pointer;
+    button {
+      background-color: rgb(50, 255, 146);
+      height: 10vh;
+      width: 20vh;
+      font-size: 4vh;
+      border-radius: 100px;
+      border: none;
+      cursor: pointer;
     }
 
-    button:hover{
-        background-color: rgb(255, 78, 78);
+    button:hover {
+      background-color: rgb(255, 78, 78);
     }
-</style>
-<body>
+  </style>
+  <body>
     <div class="btn">
-    <button id="fahh">Fahh</button>
+      <button id="fahh">Fahh</button>
     </div>
 
-<audio id="clickSound">
-  <source src="./fagg.mp3" type="audio/mpeg">
-</audio>
+    <audio id="clickSound">
+      <source src="./fagg.mp3" type="audio/mpeg" />
+    </audio>
+  </body>
+  <script>
+    const btn = document.getElementById("fahh");
+    const sound = document.getElementById("clickSound");
 
-</body>
-<script>
-  const btn = document.getElementById('fahh');
-  const sound = document.getElementById('clickSound');
-
-  btn.addEventListener('click', () => {
-    sound.currentTime = 0; // Reset to start for rapid clicks
-    sound.play();
-  });
-</script>
+    btn.addEventListener("click", () => {
+      sound.currentTime = 0; // Reset to start for rapid clicks
+      sound.play();
+    });
+  </script>
 </html>
